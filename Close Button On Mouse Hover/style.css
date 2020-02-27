@@ -1,0 +1,61 @@
+body {
+	width: 70%;
+	margin: auto;
+	margin-top: 6rem;
+	font-family: Tahoma;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+li {
+	position: relative;
+	display: flex;
+	align-items: center;
+	border: 0.1rem solid #ccc;
+	margin: 0.2rem 0;
+	height: 5rem;
+	overflow: hidden;
+	border-radius: 0.3rem;
+	transition: margin-left 0.4s ease-out, opacity 0.4s ease-out;
+	width: 35rem;
+	box-sizing: border-box;
+}
+
+li > div {
+	position: absolute;
+	padding-left: 0.1rem;
+}
+
+li > * {
+	display: flex;
+	align-items: center;
+	height: 100%;
+}
+
+button {
+	font-size: 2rem;
+	background-color: red;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	outline: none;
+	border-radius: 50%;
+	border: 0.09rem #ccc solid;
+}
+
+p {
+	background: #fff;
+	z-index: 2;
+	transition: margin-left 0.4s ease-out;
+	margin: 0;
+	padding: 1rem;
+}
+
+p:hover,
+div:hover + p {
+	margin-left: 2.46rem;
+}
